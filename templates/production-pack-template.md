@@ -26,6 +26,10 @@ Use this template when generating a production pack.
 4.
 5.
 
+### Hook testing note
+- Which 3 hooks are strongest for first-pass testing:
+- What changes across them:
+
 ### Main script
 Hook:
 
@@ -43,6 +47,11 @@ CTA:
 - Pacing target:
 
 ### Short script
+
+### Optional script variants
+- Variant A:
+- Variant B:
+- Why the body changes, if it changes:
 
 ### Tone notes
 

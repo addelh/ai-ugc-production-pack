@@ -175,6 +175,27 @@ Default to providing:
 - tone notes
 - optional paraphrase permission
 
+### Variation rule
+By default, give variation where it matters most at the top of the ad.
+
+Minimum default output per angle:
+- 3 strong hook options
+- 1 main script
+- 1 short script or cutdown
+
+Do not make 3 full scripts by default unless the user explicitly asks for script variants.
+In most cases, changing the hook while keeping one strong body script is the better default because:
+- it creates faster test coverage
+- it keeps production simpler
+- it avoids diluting the core proof path
+- it lets the user test the entry point without rewriting the whole ad
+
+Use multiple full-script variants only when:
+- the user asks for them
+- the angle could branch into genuinely different proof paths
+- the objection handling changes materially
+- the offer or audience framing changes enough to justify a different body
+
 The default script output should be ready for separate voice generation.
 Treat ElevenLabs or equivalent voice tools as the delivery layer for the script unless the user explicitly asks for on-camera speech.
 
@@ -397,6 +418,11 @@ Default to Full production pack unless the user clearly asks for another mode.
 - short script
 - tone notes
 - CTA
+
+Default expectation:
+- hooks should be meaningfully different, not cosmetic rewrites
+- the main script should stay stable unless a different proof path is being tested
+- if script variants are included, label what changes between them
 
 Mark the main script as:
 - voiceover-first
