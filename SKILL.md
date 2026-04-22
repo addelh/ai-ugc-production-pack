@@ -35,6 +35,14 @@ Given a plain-English ad concept, this skill should output:
 Do not treat this as a one-prompt skill.
 This is an orchestrator skill.
 
+Default to a voiceover-first system:
+- one separate ElevenLabs-ready script as the audio spine
+- silent visual clips that support the message without speaking it
+- final meaning assembled in edit, not inside each generated clip
+
+Do not map a spoken line to a clip by making the subject visibly say that line.
+Map spoken lines to supporting visuals, proof shots, process shots, reaction shots, and result shots.
+
 It should think in layers:
 - research layer
 - script layer
@@ -79,6 +87,40 @@ The goal is to extract:
 8. Script implications
 
 If those eight buckets are not surfaced, the research is incomplete for this use case.
+
+### Quote-bank research mode
+
+When the user wants direct quotes for script writing before running the full production pack, treat this as a dedicated research pass.
+
+In that mode:
+- start from the exact strategic angles the user provides
+- do one broad pass first only to map the terrain
+- if the first pass is thin, noisy, or too generic, immediately run tighter follow-up passes for each angle instead of pretending the first run was enough
+- prefer saving separate raw files per angle/theme when possible
+
+For quote extraction, separate findings into two buckets:
+1. direct consumer / first-person quotes
+2. creator-native or stylist-native phrasing that reflects high-performing audience language
+
+Priority order:
+- first-person consumer pain/desire language for script spine
+- creator-native phrasing for hooks, framing, and polish
+- generic editorial/blog language last
+
+For beauty / hair / routine categories, specifically look for:
+- recurring maintenance complaints
+- frequency pain (every few weeks, every month, constant touch-ups)
+- area-specific pain (roots, temples, hairline, part line, edges)
+- harshness / damage / chemical fatigue
+- blend / upkeep / softer grow-out language
+
+When presenting the quote bank, explicitly label which quotes are strongest for:
+- hook writing
+- problem articulation
+- proof / mechanism framing
+- objection handling
+
+If a clean direct consumer quote does not exist for an angle, say that plainly and use creator-native language only as a secondary source, not as fake customer voice.
 
 ## Script writing rules
 
@@ -132,6 +174,9 @@ Default to providing:
 - one shorter variant if useful
 - tone notes
 - optional paraphrase permission
+
+The default script output should be ready for separate voice generation.
+Treat ElevenLabs or equivalent voice tools as the delivery layer for the script unless the user explicitly asks for on-camera speech.
 
 Do not force word-for-word rigidity unless the user explicitly asks for it.
 
@@ -204,7 +249,60 @@ Seedance is for modular visual-beat generation, not giant all-in-one ad prompts 
 - build the ad from modular beats
 - map voiceover over the visual timeline later
 
+### Silent-visual rule
+By default, every clip should work as silent b-roll or visual support.
+
+That means:
+- no dialogue-dependent clip concepts
+- no lip-sync assumptions
+- no “character says the line” prompt logic
+- no spoken text baked into the clip unless the user explicitly asks for that format
+
+Instead, the visual layer should communicate through:
+- frustration and emotional reaction
+- problem visibility
+- product handling
+- application steps
+- speed and ease cues
+- result and confidence cues
+
+The visual job is to support the script, not perform it.
+
+### Visual beat design rule
+Think in beat banks, not line readings.
+
+Good beat types:
+- problem / pain beat
+- frustration / reaction beat
+- product reveal beat
+- application / mechanism beat
+- speed / simplicity beat
+- result / confidence beat
+- CTA / product hero beat
+
+For beauty and hair offers, common useful visuals include:
+- checking roots in the mirror
+- touching temples or hairline with frustration
+- dread around salon upkeep
+- reluctance around box dye mess or harshness
+- product in hand
+- quick root application
+- short wait-time implication
+- satisfied mirror check
+- polished result reveal
+
+### Casting and continuity rule
+The problem section can use multiple women or multiple short scenarios when that improves relatability.
+
+Default guideline:
+- early pain/problem montage can vary subjects
+- application, proof, result, and CTA should become more consistent
+- keep product identity stable throughout
+
+Do not force one single person across the entire ad unless continuity is strategically important.
+
 ### Duration rules
+- 3 to 5s = strongest default for modular support clips and ad beat banks
 - 5s = test clip or one simple visual beat
 - 8 to 10s = strongest general default for UGC clips
 - 15s = use only when the clip truly needs progression or fuller ad logic
@@ -235,6 +333,9 @@ Prompts should be:
 - explicit about realism level
 - explicit about continuity when needed
 - free of spoken script text unless truly necessary
+- focused on visible behavior, not spoken delivery
+
+Prompt for what the viewer should see, not what the character should say.
 
 ## Output format
 
@@ -297,6 +398,11 @@ Default to Full production pack unless the user clearly asks for another mode.
 - tone notes
 - CTA
 
+Mark the main script as:
+- voiceover-first
+- ElevenLabs-ready by default
+- not dependent on on-camera speaking clips
+
 ### 3. Nano Banana Pro asset plan
 For each asset:
 - asset name
@@ -313,12 +419,19 @@ For each clip:
 - dependencies
 - prompt
 
+Each clip should also make clear:
+- silent visual role
+- which emotional or proof job it serves
+- whether it is part of a varied montage or a continuity-critical section
+
 ### 5. Edit map
 - clip order
 - which voiceover lines map to which clip
 - where proof lands
 - where CTA lands
 - optional caption notes
+
+The mapping should pair voiceover lines with supporting visuals, not literal speaking performances.
 
 ### 6. Production notes
 - what to generate first
@@ -330,7 +443,9 @@ For each clip:
 Infer these unless the user says otherwise:
 - platform = Meta / paid social UGC if they mention ads
 - voiceover separate = yes
+- script delivery = ElevenLabs-ready voiceover by default
 - modular clip generation = yes
+- visual clips = silent support beats by default
 - Nano Banana Pro first = yes
 - Seedance 2.0 second = yes
 - UGC realism over cinematic beauty = yes
@@ -374,6 +489,9 @@ Before finalizing, check:
 - are Nano Banana prompts references-first and role-assigned?
 - are Seedance prompts modular and not overstuffed?
 - did I avoid making voiceover dependent on visual generation?
+- did I keep the clips silent and support-oriented by default?
+- did I avoid turning each voiceover line into an on-camera spoken clip?
+- did I preserve flexibility for montage-style pain visuals and more continuity in proof/result sections?
 - is the output actually a production pack rather than just a prompt bundle?
 
 If not, fix it.
