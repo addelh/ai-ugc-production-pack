@@ -86,8 +86,35 @@ CTA:
 - Prompt:
 - Notes:
 
-## 4. Seedance 2.0 clip plan
-### Clip 1
+## 4. Seedance 2.0 clip bank
+### Clip-bank sizing
+- Voiceover length:
+- Target number of generated Seedance clips:
+- Target number of usable edit beats:
+- Expected edit rhythm:
+- Core required generated clips:
+- Optional supporting generated clips:
+- Two-beat clip plan:
+
+### Problem / pain clips
+#### Clip 1
+- Name:
+- Purpose:
+- Silent visual role:
+- Emotional / proof job:
+- Generated duration:
+- Usable edit beats:
+  - Beat A, 0 to 2s:
+  - Beat B, 2 to 4s:
+- Reference image plan:
+  - Image 1 for Beat A:
+  - Image 2 for Beat B:
+- Mode: start frame / two-image transition / omni-reference
+- Dependencies:
+- Montage or continuity-critical:
+- Prompt:
+
+#### Clip 2
 - Name:
 - Purpose:
 - Silent visual role:
@@ -98,7 +125,7 @@ CTA:
 - Montage or continuity-critical:
 - Prompt:
 
-### Clip 2
+#### Clip 3
 - Name:
 - Purpose:
 - Silent visual role:
@@ -109,7 +136,8 @@ CTA:
 - Montage or continuity-critical:
 - Prompt:
 
-### Clip 3
+### Product / process clips
+#### Clip 4
 - Name:
 - Purpose:
 - Silent visual role:
@@ -120,7 +148,7 @@ CTA:
 - Montage or continuity-critical:
 - Prompt:
 
-### Clip 4
+#### Clip 5
 - Name:
 - Purpose:
 - Silent visual role:
@@ -131,7 +159,7 @@ CTA:
 - Montage or continuity-critical:
 - Prompt:
 
-### Clip 5
+#### Clip 6
 - Name:
 - Purpose:
 - Silent visual role:
@@ -140,6 +168,71 @@ CTA:
 - Mode: start frame / omni-reference
 - Dependencies:
 - Montage or continuity-critical:
+- Prompt:
+
+### Proof / result clips
+#### Clip 7
+- Name:
+- Purpose:
+- Silent visual role:
+- Emotional / proof job:
+- Duration:
+- Mode: start frame / omni-reference
+- Dependencies:
+- Montage or continuity-critical:
+- Prompt:
+
+#### Clip 8
+- Name:
+- Purpose:
+- Silent visual role:
+- Emotional / proof job:
+- Duration:
+- Mode: start frame / omni-reference
+- Dependencies:
+- Montage or continuity-critical:
+- Prompt:
+
+#### Clip 9
+- Name:
+- Purpose:
+- Silent visual role:
+- Emotional / proof job:
+- Duration:
+- Mode: start frame / omni-reference
+- Dependencies:
+- Montage or continuity-critical:
+- Prompt:
+
+### Extra montage support clips
+- Add enough extra supporting clips for the script length:
+  - 15s script: 4 to 6 generated Seedance clips, yielding roughly 8 to 12 usable edit beats
+  - 30s script: 6 to 9 generated Seedance clips, yielding roughly 12 to 18 usable edit beats
+  - 45s script: 9 to 12 generated Seedance clips, yielding roughly 18 to 24 usable edit beats
+  - 60s script: 12 to 18 generated Seedance clips, yielding roughly 24 to 35 usable edit beats
+- Use two-beat 4s clips where useful:
+  - Beat A, 0 to 2s, anchored by Image 1
+  - Beat B, 2 to 4s, anchored by Image 2
+
+#### Extra Clip 10
+- Name:
+- Purpose:
+- Silent visual role:
+- Duration:
+- Prompt:
+
+#### Extra Clip 11
+- Name:
+- Purpose:
+- Silent visual role:
+- Duration:
+- Prompt:
+
+#### Extra Clip 12
+- Name:
+- Purpose:
+- Silent visual role:
+- Duration:
 - Prompt:
 
 ## 5. Edit map

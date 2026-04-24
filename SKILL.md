@@ -301,16 +301,72 @@ Good beat types:
 - result / confidence beat
 - CTA / product hero beat
 
+### High-density clip bank rule
+Default to a lot more supporting clips than a simple 5-beat storyboard.
+For Meta-style UGC, especially if the voiceover is 15 to 60 seconds, the output should provide a **clip bank** the editor can mash up under the script.
+
+Default output should distinguish between **generated Seedance clips** and **usable edit beats**.
+Seedance may have a practical minimum clip length around 4 seconds, so do not simply ask for 30 separate generated clips for a 60s ad.
+Instead, create fewer generated clips, with each generated clip designed to contain 1 to 2 usable edit beats.
+
+Default generated-clip sizing:
+- 15s script: 4 to 6 generated clips, yielding roughly 8 to 12 usable edit beats
+- 30s script: 6 to 9 generated clips, yielding roughly 12 to 18 usable edit beats
+- 45s script: 9 to 12 generated clips, yielding roughly 18 to 24 usable edit beats
+- 60s script: 12 to 18 generated clips, yielding roughly 24 to 35 usable edit beats
+
+Two-beat Seedance clip rule:
+When useful, design one 4-second Seedance generation as two internal beats:
+- Beat A: 0 to 2 seconds
+- Beat B: 2 to 4 seconds
+
+This can be done by providing two image references / start frames:
+- Image 1 anchors Beat A, what should happen in 0 to 2 seconds
+- Image 2 anchors Beat B, what should happen in 2 to 4 seconds
+
+Seedance can sometimes cut, transition, or change scene internally when prompted clearly. Use this deliberately for montage density, but keep each internal beat simple.
+
+The pack should still identify the core required clips, but it should also include optional supporting beats so the editor has texture, pacing options, and visual variety.
+
+The default rhythm should be:
+- generated clips are usually 4 seconds each
+- each generated clip can contain 1 or 2 usable edit beats
+- mostly 1.5 to 2.5 second usable moments in edit
+- lots of small, specific, silent b-roll moments
+- fewer long all-in-one clips
+- competitor-style montage density where the voiceover carries meaning and the visuals create proof, familiarity, and pace
+
+Include clip categories such as:
+- problem close-ups
+- mirror reactions
+- routine/friction moments
+- product-in-hand moments
+- application details
+- texture/lather/process shots
+- waiting/time-passing shots
+- result reveals
+- confidence/lifestyle moments
+- product hero/CTA shots
+
 For beauty and hair offers, common useful visuals include:
 - checking roots in the mirror
 - touching temples or hairline with frustration
+- part-line close-ups
+- hairline and temples close-ups
+- holding old dye/box dye with reluctance
+- messy gloves/sink/towel implication shots
 - dread around salon upkeep
 - reluctance around box dye mess or harshness
 - product in hand
-- quick root application
-- short wait-time implication
+- dispensing product
+- applying around roots, temples, hairline, part line
+- lather/process detail
+- timer/wait-time implication
+- rinsing or towel-dry transition if useful
 - satisfied mirror check
+- close-up natural-looking result
 - polished result reveal
+- casual confidence/lifestyle beat
 
 ### Casting and continuity rule
 The problem section can use multiple women or multiple short scenarios when that improves relatability.
@@ -436,19 +492,31 @@ For each asset:
 - prompt
 - notes
 
-### 4. Seedance 2.0 clip plan
+### 4. Seedance 2.0 clip bank
+Provide a high-density clip bank sized to the script length, not just 5 hero clips.
+
 For each clip:
 - clip name
 - purpose
-- duration
-- mode: start frame or omni-reference
+- generated duration
+- usable edit beats
+- internal timing plan when applicable, e.g. Beat A 0 to 2s / Beat B 2 to 4s
+- reference image plan: Image 1 for Beat A, Image 2 for Beat B when useful
+- mode: start frame, two-image transition, or omni-reference
 - dependencies
 - prompt
 
 Each clip should also make clear:
 - silent visual role
 - which emotional or proof job it serves
+- whether it is core required footage or optional supporting montage texture
 - whether it is part of a varied montage or a continuity-critical section
+
+Default to grouped clip categories:
+- problem / pain clips
+- product / process clips
+- proof / result clips
+- extra montage support clips
 
 ### 5. Edit map
 - clip order
