@@ -119,8 +119,14 @@ CTA:
 - Purpose:
 - Silent visual role:
 - Emotional / proof job:
-- Duration:
-- Mode: start frame / omni-reference
+- Generated duration:
+- Usable edit beats:
+  - Beat A, 0 to 2s:
+  - Beat B, 2 to 4s:
+- Reference image plan:
+  - Image 1 for Beat A:
+  - Image 2 for Beat B:
+- Mode: start frame / two-image transition / omni-reference
 - Dependencies:
 - Montage or continuity-critical:
 - Prompt:
@@ -130,8 +136,14 @@ CTA:
 - Purpose:
 - Silent visual role:
 - Emotional / proof job:
-- Duration:
-- Mode: start frame / omni-reference
+- Generated duration:
+- Usable edit beats:
+  - Beat A, 0 to 2s:
+  - Beat B, 2 to 4s:
+- Reference image plan:
+  - Image 1 for Beat A:
+  - Image 2 for Beat B:
+- Mode: start frame / two-image transition / omni-reference
 - Dependencies:
 - Montage or continuity-critical:
 - Prompt:
@@ -142,8 +154,14 @@ CTA:
 - Purpose:
 - Silent visual role:
 - Emotional / proof job:
-- Duration:
-- Mode: start frame / omni-reference
+- Generated duration:
+- Usable edit beats:
+  - Beat A, 0 to 2s:
+  - Beat B, 2 to 4s:
+- Reference image plan:
+  - Image 1 for Beat A:
+  - Image 2 for Beat B:
+- Mode: start frame / two-image transition / omni-reference
 - Dependencies:
 - Montage or continuity-critical:
 - Prompt:
@@ -153,8 +171,14 @@ CTA:
 - Purpose:
 - Silent visual role:
 - Emotional / proof job:
-- Duration:
-- Mode: start frame / omni-reference
+- Generated duration:
+- Usable edit beats:
+  - Beat A, 0 to 2s:
+  - Beat B, 2 to 4s:
+- Reference image plan:
+  - Image 1 for Beat A:
+  - Image 2 for Beat B:
+- Mode: start frame / two-image transition / omni-reference
 - Dependencies:
 - Montage or continuity-critical:
 - Prompt:
@@ -164,8 +188,14 @@ CTA:
 - Purpose:
 - Silent visual role:
 - Emotional / proof job:
-- Duration:
-- Mode: start frame / omni-reference
+- Generated duration:
+- Usable edit beats:
+  - Beat A, 0 to 2s:
+  - Beat B, 2 to 4s:
+- Reference image plan:
+  - Image 1 for Beat A:
+  - Image 2 for Beat B:
+- Mode: start frame / two-image transition / omni-reference
 - Dependencies:
 - Montage or continuity-critical:
 - Prompt:
@@ -176,8 +206,14 @@ CTA:
 - Purpose:
 - Silent visual role:
 - Emotional / proof job:
-- Duration:
-- Mode: start frame / omni-reference
+- Generated duration:
+- Usable edit beats:
+  - Beat A, 0 to 2s:
+  - Beat B, 2 to 4s:
+- Reference image plan:
+  - Image 1 for Beat A:
+  - Image 2 for Beat B:
+- Mode: start frame / two-image transition / omni-reference
 - Dependencies:
 - Montage or continuity-critical:
 - Prompt:
@@ -187,8 +223,14 @@ CTA:
 - Purpose:
 - Silent visual role:
 - Emotional / proof job:
-- Duration:
-- Mode: start frame / omni-reference
+- Generated duration:
+- Usable edit beats:
+  - Beat A, 0 to 2s:
+  - Beat B, 2 to 4s:
+- Reference image plan:
+  - Image 1 for Beat A:
+  - Image 2 for Beat B:
+- Mode: start frame / two-image transition / omni-reference
 - Dependencies:
 - Montage or continuity-critical:
 - Prompt:
@@ -198,8 +240,14 @@ CTA:
 - Purpose:
 - Silent visual role:
 - Emotional / proof job:
-- Duration:
-- Mode: start frame / omni-reference
+- Generated duration:
+- Usable edit beats:
+  - Beat A, 0 to 2s:
+  - Beat B, 2 to 4s:
+- Reference image plan:
+  - Image 1 for Beat A:
+  - Image 2 for Beat B:
+- Mode: start frame / two-image transition / omni-reference
 - Dependencies:
 - Montage or continuity-critical:
 - Prompt:
